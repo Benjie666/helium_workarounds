@@ -10,7 +10,7 @@ WORKDIR /app
 RUN mkdir /log
 
 VOLUME ["/log"]
-ENV LOG_FILE /log/console.log
+ENV LOG_FILE /mnt/data/docker/volumes/1851574_miner-log/_data/console.log
 ENV PYTHONUNBUFFERED 1
 
 CMD ["python3", "fix_not_found_peer.py"]
